@@ -28,8 +28,6 @@ export default function Register() {
 
     const newUser = { email, password };
     localStorage.setItem("users", JSON.stringify([...users, newUser]));
-
-    // ✅ Không auto-login nữa → quay lại trang login
     alert("Đăng ký thành công! Hãy đăng nhập để tiếp tục.");
     navigate("/login");
   };
