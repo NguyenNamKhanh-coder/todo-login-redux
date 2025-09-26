@@ -5,7 +5,7 @@ export default function Navbar() {
 
   const logout = () => {
     localStorage.removeItem("user");
-    // reload về login -> đảm bảo route được bảo vệ
+    
     window.location.href = "/login";
   };
 
